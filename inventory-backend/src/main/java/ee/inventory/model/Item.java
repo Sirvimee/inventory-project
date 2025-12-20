@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
 
 import io.micronaut.serde.annotation.Serdeable;
 import lombok.Data;
@@ -27,6 +28,7 @@ public class Item {
     private String name;
 
     private String artist;
+    @Column(name = "item_year")
     private Integer year;
 
     private String category;
