@@ -3,6 +3,7 @@ package ee.inventory.controller;
 import ee.inventory.model.Item;
 import ee.inventory.service.ItemService;
 import io.micronaut.http.annotation.*;
+import io.micronaut.http.server.cors.CrossOrigin;
 import lombok.RequiredArgsConstructor;
 import java.util.List;
 
